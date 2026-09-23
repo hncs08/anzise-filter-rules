@@ -1,0 +1,66 @@
+{
+  "listenPort": 17890,
+  "httpsInspection": true,
+  "autoSetSystemProxy": false,
+  "ruleUpdateUrl": "https://raw.githubusercontent.com/hncs08/anzise-filter-rules/main/rules.json",
+  "ruleUpdateIntervalMinutes": 360,
+  "sites": [
+    {
+      "name": "anzise-sites",
+      "enabled": true,
+      "hosts": [
+        "423down.com",
+        "epy.ziluoli3.xyz",
+        "gnu.anzise6.buzz",
+        "sbd.avcsm7.work",
+        "www.423down.com"
+      ],
+      "blockedPaths": [
+        "/000/flink/",
+        "/abc/data_",
+        "/abc/fixed_ui_",
+        "/wp-content/plugins/wp-opt/static/js/"
+      ],
+      "blockedExtensions": [],
+      "blockedUrls": [],
+      "blockThirdPartyImages": false
+    },
+    {
+      "name": "example-second-site",
+      "enabled": false,
+      "hosts": [
+        "ads.example.com",
+        "*.example-cdn.com"
+      ],
+      "blockedPaths": [
+        "/ads/",
+        "/pop/",
+        "/banner/"
+      ],
+      "blockedExtensions": [
+        ".gif"
+      ],
+      "blockedUrls": [
+        "*://ads.example.com/track/*"
+      ],
+      "blockThirdPartyImages": false
+    },
+    {
+      "name": "global-ad-networks",
+      "enabled": true,
+      "hosts": [
+        "pagead2.googlesyndication.com",
+        "googleads.g.doubleclick.net",
+        "securepubads.g.doubleclick.net"
+      ],
+      "blockedPaths": [
+        "/pagead/",
+        "/pagead2/",
+        "/gampad/"
+      ],
+      "blockedExtensions": [],
+      "blockedUrls": [],
+      "blockThirdPartyImages": false
+    }
+  ]
+}
