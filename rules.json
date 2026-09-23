@@ -61,6 +61,33 @@
       "blockedExtensions": [],
       "blockedUrls": [],
       "blockThirdPartyImages": false
+    },
+    {
+      "name": "cybermania-site",
+      "enabled": true,
+      "hosts": [
+        "cybermania.ws",
+        "www.cybermania.ws"
+      ],
+      "blockedPaths": [],
+      "blockedExtensions": [],
+      "blockedUrls": [],
+      "blockThirdPartyImages": false
+    },
+    {
+      "name": "cybermania-ad-networks",
+      "enabled": true,
+      "hosts": [
+        "drvdb9rcebidk.cloudfront.net",
+        "llvpn.com"
+      ],
+      "blockedPaths": [
+        "/",
+        "/tag.min.js"
+      ],
+      "blockedExtensions": [],
+      "blockedUrls": [],
+      "blockThirdPartyImages": false
     }
   ]
 }
